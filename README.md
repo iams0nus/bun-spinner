@@ -5,11 +5,7 @@ TTL-based terminal spinner package optimized for Bun.js runtime.
 ## Installation
 
 ```bash
-# Install as dependency
 bun add bun-spinner
-
-# Or use with bunx (no installation required)
-bunx bun-spinner
 ```
 
 ## Usage
