@@ -1,0 +1,62 @@
+{
+  "name": "bun-spinner",
+  "version": "1.0.0",
+  "description": "Lightweight terminal spinner for Bun.js - 50+ animations, auto-timeout, advanced colors, zero dependencies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "bun": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun run build.ts",
+    "dev": "bun --watch src/index.ts",
+    "prepublishOnly": "bun run build",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "test:coverage": "bun test --coverage",
+    "test:integration": "bun test/integration/run-tests.js"
+  },
+  "keywords": [
+    "bun",
+    "bunjs",
+    "spinner",
+    "loader",
+    "terminal",
+    "cli",
+    "ttl",
+    "loading",
+    "progress",
+    "timeout",
+    "animation",
+    "typescript",
+    "zero-dependencies"
+  ],
+  "author": "Sonu Sharma <sharmasonu.edu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "bun": ">=1.0.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iams0nus/bun-spinner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iams0nus/bun-spinner/issues"
+  },
+  "homepage": "https://github.com/iams0nus/bun-spinner#readme"
+}
